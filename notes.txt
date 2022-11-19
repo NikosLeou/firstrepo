@@ -5,11 +5,12 @@ git config --list
 will list the settings. There you should also find user.name and user.email.
 (Type q to get out)
 
-To configure:
+To configure a setting:
 git config --global user.name "My Name"
 git config --global user.email "myemail@example.com"
 
 To find git repositories in my local machine, just use your OS file/folder find program to find .git named folders
+___________________________________________
 
 To rename a file in the repository:
 git mv filename new_filename
@@ -17,12 +18,22 @@ git mv filename new_filename
 To delete a file:
 git rm <file>
 
+If you deleted a file locally, to delete it remotely:
 
-If you deleted a file locally, then commit the deletion:
-
+commit the deletion:
 git commit -a -m "A file was deleted"
 
 And push your commit upstream:
-
 git push origin master
+___________________________________________
 
+To push a file edit to remote:
+
+change a file and add it to the  Git staging area: (This area contains a list of all the files you have recently changed. Your repository will be updated the next time you create a commit with your changes)
+git add notes.txt
+
+Then, commit
+git commit -m "file changing message"
+
+Then, push:
+git push origin master 
