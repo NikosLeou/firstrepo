@@ -32,8 +32,11 @@ To push a file edit to remote:
 change a file and add it to the  Git staging area: (This area contains a list of all the files you have recently changed. Your repository will be updated the next time you create a commit with your changes)
 git add notes.txt
 
-Then, commit
+You can check which files are being tracked with"
+git status
+
+Now that git tracks the file, we can commit:
 git commit -m "file changing message"
 
-Then, push:
+Commit simply creates a checkpoint that you can revert to at any time. Now we can push to GitHub:
 git push origin master 
