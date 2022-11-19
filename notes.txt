@@ -1,0 +1,12 @@
+
+
+The command:
+git config --list
+will list the settings. There you should also find user.name and user.email.
+(Type q to get out)
+
+To configure:
+git config --global user.name "My Name"
+git config --global user.email "myemail@example.com"
+
+To find git repositories in my local machine, just use your OS file/folder find program to find .git named folders
