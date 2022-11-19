@@ -59,4 +59,24 @@ Then add a new file manually to the repository. And then do git add, commit & pu
 To switch back to the master branch:
 git checkout master
 
-If you now do Git status, the new file you added before doesn't show because it is not tracked in this branch. You'd need to add, commit, push to make it available on the master branch.
+NOTE: If you now do Git status, the new file you added before doesn't show because it is not tracked in this branch. You'd need to add, commit, push to make it available on the master branch.
+_________________________________________
+
+Pull Request
+
+using GitHub:
+https://blog.reviewnb.com/github-jupyter-notebook/
+
+or with Git Bash:
+from the  master branch, run: git merge pyspark . Then git push .
+
+If you get the error: "Updates were rejected because the tip of your current branch is behind its remote counterpart", this means you need to pull before pushing.
+
+
+
+
+
+
+
+
+
