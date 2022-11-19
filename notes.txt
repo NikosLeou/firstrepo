@@ -10,3 +10,19 @@ git config --global user.name "My Name"
 git config --global user.email "myemail@example.com"
 
 To find git repositories in my local machine, just use your OS file/folder find program to find .git named folders
+
+To rename a file in the repository:
+git mv filename new_filename
+
+To delete a file:
+git rm <file>
+
+
+If you deleted a file locally, then commit the deletion:
+
+git commit -a -m "A file was deleted"
+
+And push your commit upstream:
+
+git push origin master
+
