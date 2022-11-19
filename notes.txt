@@ -45,3 +45,18 @@ ___________________________________________
 
 move repository to different directory
 mv C:\\Users\\Nikos\\myGitProject C:\\Users\\Nikos\\GitRepos\\FirstRepo
+
+___________________________________________
+
+create a new branch locally:
+git checkout -b pyspark
+
+To create this branch remotely, do:
+git push --set-upstream origin pyspark
+
+Then add a new file manually to the repository. And then do git add, commit & push like before to push your commits to this newly created branch.
+
+To switch back to the master branch:
+git checkout master
+
+If you now do Git status, the new file you added before doesn't show because it is not tracked in this branch. You'd need to add, commit, push to make it available on the master branch.
