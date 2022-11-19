@@ -40,3 +40,8 @@ git commit -m "file changing message"
 
 Commit simply creates a checkpoint that you can revert to at any time. Now we can push to GitHub:
 git push origin master 
+
+___________________________________________
+
+move repository to different directory
+mv C:\\Users\\Nikos\\myGitProject C:\\Users\\Nikos\\GitRepos\\FirstRepo
